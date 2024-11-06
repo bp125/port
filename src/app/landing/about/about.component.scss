@@ -1,0 +1,107 @@
+.about-main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+    font-weight: bold;
+    justify-content: center;
+    text-align: center;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    text-align: center;
+}
+
+.expe-pro {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 45px;
+    gap: 10px;
+    flex-wrap: wrap; /* Ensure the layout is responsive on small screens */
+    justify-content: center; /* Center the items on smaller screens */
+}
+
+.ex1, .ex2, .ex3 {
+    width: 220px;
+    height: 106px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 15px;
+    cursor: pointer;
+    transition: transform 0.3s ease; /* Optional: adds a hover effect */
+}
+
+.ex1:hover, .ex2:hover, .ex3:hover {
+    transform: scale(1.05); /* Optional: adds zoom effect on hover */
+}
+
+/* Make the image fit the container and be responsive */
+.ex1 img, .ex2 img, .ex3 img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    border-radius: 4px; /* Optional: adds rounded corners */
+}
+
+@media screen and (max-width: 768px) {
+    .about-main {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px; /* Increase gap on smaller screens */
+        margin-top: 220px
+    }
+
+    .left {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .right {
+        width: 80%;
+    }
+
+    .expe-pro {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ex1, .ex2, .ex3 {
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    
+
+    .left {
+        font-size: 18px;
+    }
+
+    .right {
+        width: 90%;
+    }
+
+    .expe-pro div {
+        width: 100%;
+        max-width: 280px; /* Limit the width on small screens */
+    }
+
+    .ex1, .ex2, .ex3 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}

@@ -1,0 +1,85 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    // background-color: black; /* Add a background to navbar */
+}
+.navbar.dark-mode {
+    background-color: black; /* Background for dark mode */
+  }
+  .navbar.light-mode {
+    background-color: white; /* Background for light mode */
+  }
+
+.mid, .right {
+    display: flex;
+    align-items: center;
+}
+.left {
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+}
+
+.mid {
+    gap: 20px;
+}
+
+.nav-link {
+    text-decoration: none;
+    padding: 10px;
+}
+
+// .nav-link:hover {
+//     text-decoration: underline;
+// }
+
+.hire-button {
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.hire-button:hover {
+    background-color: burlywood;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .mid {
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+    }
+
+    .nav-link {
+        width: 100%;
+        text-align: center;
+    }
+
+    .hire-button {
+        width: 100%;
+    }
+}
+
+.right {
+    column-gap: 20px;
+}
+
+.active {
+    font-weight: bold;
+    color: #007bff;
+    border-bottom: 5px solid #007bff;
+}

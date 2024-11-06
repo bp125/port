@@ -1,0 +1,108 @@
+.about-main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.con{
+    text-decoration: underline;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+    font-weight: bold;
+    justify-content: center;
+    text-align: center;
+    row-gap: 40px;
+    opacity: 0; /* Initially hidden */
+    animation: fadeIn 1.5s forwards; /* Fade in animation for the entire column */
+}
+
+/* Class for individual contact items */
+.contact-item {
+    opacity: 0; /* Initially hidden */
+    animation: fadeInItem 1s forwards; /* Apply animation to each item */
+}
+
+#gmail {
+    animation-delay: 0.3s; /* Delay for Gmail */
+}
+#github {
+    animation-delay: 0.6s; /* Delay for GitHub */
+}
+#linkedin {
+    animation-delay: 0.9s; /* Delay for LinkedIn */
+}
+#address {
+    animation-delay: 1.2s; /* Delay for Address */
+}
+#mobile {
+    animation-delay: 1.6s; /* Delay for Address */
+}
+
+/* Animation for fading in the entire left section */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Animation for fading in each contact item with a delay */
+@keyframes fadeInItem {
+    from {
+        opacity: 0;
+        transform: translateY(10px); /* Start slightly below */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* Move into place */
+    }
+}
+
+/* Style links in the contact items */
+.contact-item a {
+    text-decoration: none;
+    color: #0066cc;
+    font-weight: normal;
+}
+
+.contact-item a:hover {
+    color: #004d99;
+    text-decoration: underline;
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+    .about-main {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        margin-top: 220px;
+    }
+
+    .left {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .right {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .left {
+        font-size: 18px;
+    }
+
+    .right {
+        width: 90%;
+    }
+}

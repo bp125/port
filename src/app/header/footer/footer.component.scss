@@ -1,0 +1,99 @@
+.footer {
+    height: 80px;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: #0073e6;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    
+    box-sizing: border-box; /* Ensures padding is included in element's total width/height */
+  }
+  
+  /* Media query for tablets and mobile devices */
+  @media (max-width: 768px) {
+    .footer {
+      position: relative;
+      height: 200px; /* Adjust footer size for smaller screens */
+      padding: 10px; /* Add some padding for better spacing */
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-column {
+      width: 100%;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+  
+    .social-media a {
+      font-size: 20px;
+      margin-right: 10px;
+    }
+  }
+  
+  /* Media query for very small screens (mobile) */
+  @media (max-width: 480px) {
+    .footer {
+      height: 430px; /* Slightly more space for very small screens */
+      padding: 10px;
+    }
+  
+    .footer-column h3 {
+      font-size: 16px; /* Adjust font size for small screens */
+    }
+  
+    .footer-column small {
+      font-size: 12px;
+    }
+  
+    .social-media a {
+      font-size: 18px; /* Adjust icon size */
+      margin-right: 8px;
+    }
+  
+    .copy-rights h3 {
+      font-size: 14px;
+    }
+  }
+  
+  /* Default for larger screens */
+  .footer-column {
+    width: 30%;
+  }
+  
+  .footer-column h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .social-media a {
+    display: inline-block;
+    margin-right: 15px;
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .social-media a:hover {
+    color: #0073e6;
+  }
+  
+  .copy-rights {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Fix for extra spacing issue with copy-rights */
+  .copy-rights h3 {
+    margin: 0;
+    font-size: 16px;
+    color: white;
+  }
+  

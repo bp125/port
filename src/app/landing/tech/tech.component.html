@@ -1,0 +1,12 @@
+<div class="tech-main">
+    <div class="tech-stack">
+      <div
+        class="tech-box"
+        *ngFor="let tech of techstack"
+        [ngStyle]="{ 'background-color': tech.color }"
+      >
+        <strong>{{ tech.value }}</strong>
+      </div>
+    </div>
+  </div>
+  
