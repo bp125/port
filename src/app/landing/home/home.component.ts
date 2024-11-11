@@ -36,7 +36,7 @@ export class HomeComponent implements OnInit, OnDestroy {
   }
 
   downloadCV() {
-    const url = 'https://drive.google.com/uc?export=download&id=1GTU1stTVSn1ogi9Ebt3_1r36tyix59kT';
-    window.open(url, '_blank');  // This will trigger the download
+    // const url = 'https://drive.google';
+    // window.open(url, '_blank');  // This will trigger the download
   }
 }
