@@ -10,6 +10,7 @@ export class TechComponent {
   techstack = [
     { key: "Angular", value: "Angular", color: "#dd1b16" },
     { key: "React", value: "React", color: "#61dafb" },
+    { key: "Redux", value: "Redux", color: "red" },
     { key: "NgRx", value: "NgRx", color: "#f9a828" },
     { key: "RxJS", value: "RxJS", color: "#00796b" },
     { key: "JavaScript", value: "JavaScript", color: "#f0db4f" },
