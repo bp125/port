@@ -1,3 +1,8 @@
+.about-header{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 150px;
+}
 .about-main {
     display: flex;
     flex-wrap: wrap;
@@ -26,13 +31,42 @@
 .expe-pro {
     display: flex;
     justify-content: space-around;
-    margin-top: 45px;
-    gap: 10px;
-    flex-wrap: wrap; /* Ensure the layout is responsive on small screens */
-    justify-content: center; /* Center the items on smaller screens */
+    margin-top: 90px;
+    gap: 100px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.peoject{
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+.career-data{
+    display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        margin-top: 70px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+    font-weight: bold;
+
+
+.career{
+    display: flex;
+    justify-content: center;
+    // margin: 30px;
+}
+.company{
+    display: flex;
+
+}
 }
 
-.ex1, .ex2, .ex3 {
+.ex1, .ex2, .ex3 , .ex4{
     width: 220px;
     height: 106px;
     text-align: center;
@@ -45,12 +79,12 @@
     transition: transform 0.3s ease; /* Optional: adds a hover effect */
 }
 
-.ex1:hover, .ex2:hover, .ex3:hover {
+.ex1:hover, .ex2:hover, .ex3, .ex4:hover {
     transform: scale(1.05); /* Optional: adds zoom effect on hover */
 }
 
 /* Make the image fit the container and be responsive */
-.ex1 img, .ex2 img, .ex3 img {
+.ex1 img, .ex2 img, .ex3 img , .ex4 img {
     max-width: 100%;
     max-height: 100%;
     object-fit: cover;
@@ -79,7 +113,7 @@
         align-items: center;
     }
 
-    .ex1, .ex2, .ex3 {
+    .ex1, .ex2, .ex3, .ex4 {
         width: 250px;
     }
 }
@@ -100,7 +134,7 @@
         max-width: 280px; /* Limit the width on small screens */
     }
 
-    .ex1, .ex2, .ex3 {
+    .ex1, .ex2, .ex3 , .ex4{
         width: 100%;
         margin-bottom: 20px;
     }
