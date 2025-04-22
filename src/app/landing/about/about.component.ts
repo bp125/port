@@ -18,17 +18,4 @@ export class AboutComponent {
   wizhob(): void {
     window.open('https://wizhob.com/', '_blank');
   }
-  cstoreiq(): void {
-    window.open('https://app.cstoreiq.com/#/dashboard', '_blank');
-  }
-  cstoreiqcmpn(): void {
-    window.open('https://www.cstoreiq.com/', '_blank');
-  }
-  gaian(): void {
-    window.open('https://www.gaiansolutions.com/', '_blank');
-  }
-  techmahindra(): void {
-    window.open('https://www.techmahindra.com/', '_blank');
-  }
-
 }
