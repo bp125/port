@@ -19,7 +19,7 @@ export class AboutComponent {
     window.open('https://wizhob.com/', '_blank');
   }
   cstoreiq(): void {
-    window.open('https://app.cstoreiq.com/#/dashboard', '_blank');
+    window.open('https://devcsiqbo.cstoreiq.com/#/dashboard', '_blank');
   }
   cstoreiqcmpn(): void {
     window.open('https://www.cstoreiq.com/', '_blank');
